@@ -5,4 +5,12 @@
     <color name="orange">#ff9f0c</color>
     <color name="gray">#808080</color>
     <color name="dark_gray">#333333</color>
+    <color name="blue">#2F80ED</color>
+    <color name="text_color">#28323B</color>
+    <color name="bg_user">#4687F0</color>
+    <color name="purpure">#693BFD</color>
+    <color name="green">#4CAF50</color>
+    <color name="red">#BC253E</color>
+    <color name="elou">#FFEB3B</color>
+
 </resources>

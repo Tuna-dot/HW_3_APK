@@ -1,5 +1,6 @@
 package com.example.hw_3_apk;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.HorizontalScrollView;
@@ -19,7 +20,7 @@ public class MainActivity extends AppCompatActivity {
     private float b;
     private boolean isOperationClick;
     private String operation;
-    
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -63,7 +64,6 @@ public class MainActivity extends AppCompatActivity {
 
 
 
-
     public void onOperationClick(View view) {
         if (view.getId() == R.id.btn_plus) {
             operation = "+";
@@ -91,6 +91,14 @@ public class MainActivity extends AppCompatActivity {
                     Float.parseFloat(textView.getText().toString().replace("%", "").trim()) / 100 :
                     Float.parseFloat(textView.getText().toString().trim());
         } else if (view.getId() == R.id.btn_equal) {
+            textView.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    Intent intent = new Intent(MainActivity.this, MainActivity2.class);
+                    startActivity(intent);
+                    finish();
+                }
+            });
             boolean percentOn = textView.getText().toString().contains("%");
             b = percentOn ?
                     Float.parseFloat(textView.getText().toString().replace("%", "").trim()) / 100 :

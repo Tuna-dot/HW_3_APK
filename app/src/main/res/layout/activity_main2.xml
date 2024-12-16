@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:background="#28323B"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity2">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_view"
+        android:layout_width="match_parent"
+        android:layout_height="208dp"
+        android:layout_marginHorizontal="8dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="56dp"
+        app:cardCornerRadius="20dp"
+        >
+
+        <ImageView
+            android:id="@+id/hert"
+            android:layout_width="26dp"
+            android:layout_height="26dp"
+            android:layout_gravity="top|end"
+            android:layout_marginTop="18dp"
+            android:layout_marginEnd="16dp"
+            android:src="@drawable/color_hert"
+            />
+
+
+
+        <Button
+            android:layout_width="88dp"
+            android:layout_height="24dp"
+            android:layout_gravity="center|top"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/ic_bg_btn"
+            android:text="Category"
+            android:textColor="@color/white"
+            android:textSize="12sp"
+            />
+
+       <TextView
+           android:layout_width="match_parent"
+           android:layout_height="48dp"
+           android:text="Explore the nightlife of your city"
+           android:textSize="24sp"
+           android:textStyle="bold"
+           android:layout_gravity="center"
+           android:textColor="@color/text_color"
+           android:paddingTop="10dp"
+           android:layout_marginHorizontal="16dp"
+           android:textAlignment="center"
+           />
+
+        <TextView
+            android:id="@+id/tw_free"
+            android:layout_width="48dp"
+            android:layout_height="16dp"
+            android:text="free"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:textColor="@color/text_color"
+            android:layout_gravity="start|bottom"
+            android:layout_marginBottom="32dp"
+            android:layout_marginStart="32dp"
+            android:textAlignment="center"
+            tools:ignore="RtlCompat" />
+        
+        <TextView
+            android:layout_width="48dp"
+            android:layout_height="16dp"
+            android:text="Price💰"
+            android:textSize="10sp"
+            android:textColor="@color/text_color"
+            android:layout_gravity="start|bottom"
+            android:layout_marginStart="32dp"
+            android:layout_marginBottom="16dp"
+            android:textAlignment="center"
+            tools:ignore="RtlCompat" />
+
+        
+        <TextView
+            android:layout_width="72dp"
+            android:layout_height="12dp"
+            android:text="Participants"
+            android:layout_gravity="center|bottom"
+            android:textSize="10sp"
+            android:textColor="@color/text_color"
+            android:layout_marginBottom="16dp"
+            android:textAlignment="center"
+            />
+        
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_gravity="start|bottom"
+            android:src="@drawable/user_icon1"
+            android:layout_marginBottom="29dp"
+            android:layout_marginStart="144dp"
+            />
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/user_icon2"
+            android:layout_gravity="start|bottom"
+            android:layout_marginBottom="29dp"
+            android:layout_marginStart="170dp"
+            />
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/user_icon3"
+            android:layout_gravity="start|bottom"
+            android:layout_marginBottom="29dp"
+            android:layout_marginStart="197dp"
+            />
+
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/ic_user_icon4"
+            android:layout_gravity="start|bottom"
+            android:layout_marginBottom="29dp"
+            android:layout_marginStart="224dp"
+            />
+
+        <androidx.core.widget.ContentLoadingProgressBar
+            android:layout_width="100dp"
+            android:layout_height="10dp"
+            android:layout_gravity="end|bottom"
+            android:layout_marginBottom="30dp"
+            android:layout_marginEnd="16dp"
+            android:progressDrawable="@drawable/dowland_bar"
+            android:max="4"
+            android:progress="0"
+            />
+
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:text="Accessibility"
+            android:textAlignment="center"
+            android:layout_gravity="bottom|end"
+            android:layout_marginBottom="16dp"
+            android:layout_marginEnd="24dp"
+            android:textSize="10sp"
+            />
+
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/tw_сategory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Category"
+        android:textSize="12sp"
+        android:textColor="@color/white"
+        app:layout_constraintTop_toBottomOf="@+id/big_btn"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="34dp"
+        android:layout_marginStart="8dp"
+
+        />
+
+    <Spinner
+        android:id="@+id/spiner"
+        android:layout_width="170dp"
+        android:layout_height="50dp"
+        app:layout_constraintTop_toBottomOf="@+id/tw_сategory"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="9dp"
+        app:layout_constraintCircleRadius="8dp"
+        android:backgroundTintMode="@color/black"
+        android:spinnerMode="dropdown"
+        android:background="@drawable/spiner_bg"
+        />
+
+
+
+
+
+    <Button
+        android:id="@+id/big_btn"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        app:layout_constraintTop_toBottomOf="@+id/card_view"
+        app:layout_constraintStart_toStartOf="@+id/card_view"
+        app:layout_constraintEnd_toEndOf="@+id/card_view"
+        android:layout_marginTop="26dp"
+        android:layout_marginHorizontal="8dp"
+        android:text="Next"
+        android:textSize="16sp"
+        android:background="@drawable/ic_bg_big_btn"
+        android:textColor="@color/white"
+        android:textAlignment="center"
+        />
+
+    <TextView
+        android:id="@+id/tw_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/big_btn"
+        app:layout_constraintEnd_toEndOf="@+id/big_btn"
+        android:text="Price"
+        android:textSize="12sp"
+        android:layout_marginTop="34dp"
+        android:layout_marginEnd="155dp"
+        android:textColor="@color/white"/>
+
+
+    <com.google.android.material.slider.Slider
+        android:layout_width="177dp"
+        android:layout_height="14dp"
+        android:layout_marginTop="4dp"
+        app:layout_constraintStart_toStartOf="@+id/tw_price"
+        app:layout_constraintTop_toBottomOf="@+id/tw_price"
+        android:backgroundTint="@color/purpure"
+        />
+
+    <TextView
+        android:id="@+id/tw_accessibility"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Accessibility"
+        android:textSize="12sp"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="@+id/tw_price"
+        app:layout_constraintTop_toBottomOf="@+id/tw_price"
+        android:layout_marginTop="82dp"/>
+    
+    <com.google.android.material.slider.RangeSlider
+        android:layout_width="177dp"
+        android:layout_height="14dp"
+        app:layout_constraintTop_toBottomOf="@+id/tw_accessibility"
+        app:layout_constraintStart_toStartOf="@+id/tw_accessibility"
+        android:layout_marginTop="4dp"/>
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
